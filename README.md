@@ -1,15 +1,18 @@
-# BBRR Solutions React Boilerplate
+#Notes
+first you need to install redux and react-redux libraries.
 
-## Description
+After that 2 folders need to be created, one called actions aon other one called reducers.
 
-Boilerplate developed and used by BBRR Solutions once create-react-app is executed
+On reducers you will create a file with each reducer you want to use.
 
-## Authors and Acknowledgment
+A reducer is only a const that receives a state and an action, the state on the () will be the initial state, and the action will be passed inside the constant to enter a switch were you will return the state modified depending the action.
 
-BBRR Solutions Team:
+Note: the action is an object with a key called type that stores the value to be evaluated in the switch.
 
-- Bruno Ruiz <bruno.ruiz@bbrr.solutions>
+After all the reducers are declared you will merge them together with the combineReducers imported from redux.
 
-## Create React App README
+In the index you will call createStore from redux and Provider from react-redux.
 
-See the create-react-app README.md file at <https://github.com/BBRR-Solutions/React-Boilerplate>
+Now you will call AllReducers and create a const called store.
+
+you will use the function createStore with AllReducers inside and you will put the Provider around App()
