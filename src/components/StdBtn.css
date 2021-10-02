@@ -1,0 +1,14 @@
+.StdButton {
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 10px;
+  width: 105px;
+}
+.StdButton:hover,
+.StdButton:focus {
+  background-color: rgb(7, 194, 7);
+  outline: none;
+}
+.StdButton:focus {
+  border-radius: 10px;
+}

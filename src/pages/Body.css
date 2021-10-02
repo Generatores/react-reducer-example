@@ -1,0 +1,9 @@
+.Body {
+  width: 85%;
+  margin: auto;
+  margin-top: 200px;
+  min-width: 300px;
+}
+.Body > p {
+  text-align: center;
+}
